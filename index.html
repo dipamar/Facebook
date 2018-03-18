@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="Find your facebook details in this page using Facebook Graph API">
+  
+    <!-- stylesheet css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container" >
+                <a href ="#" class ="navbar-brand"> Facebook</a>
+            </div>
+    </nav></br><!---nav end -->
+    <!-- home page -->
+    <div class="container" id="home">
+        <div class="row">
+            <div class="col-sx-12 col-sm-12 col-md-6">
+                <div class="input-group" style="padding: 50px 10px 0 20px">
+                    <span class="input-group-addon">API Path</span>
+                    <input type="text" class="form-control" id="apiid" placeholder="Paste Facebook API Token here...">
+                </div>
+            </div>
+
+            <div class="col-sx-3 col-sm-3 col-md-2">
+                <div style="padding: 50px 10px 0 20px">
+               <button id="profilebtn" class="btn btn-primary pos box" type="button" >Show Profile</button>  
+            </div>
+        </div>
+
+
+            <div class="col-sx-3 col-sm-3 col-md-2">
+                <div style="padding: 50px 10px 0 20px">
+               <button id="feedbtn" class="btn btn-primary pos box" type="button">Show Feed</button>   
+            </div>
+        </div>
+        </div>
+    </div> </br><!-- home page end -->
+    <!-- profile page -->
+    <!-- profile image  -->
+    <div class="container" id="profileimages">
+        <div class="row">
+            <div class="col-sx-12 col-sm-12 col-md-7" align="center">
+                <div class="profile clearfix">
+                    <div class="image" align="center">
+                        <img class="imgcover img-responsive" alt="Cover pic">
+                    </div>
+                    <div class="user clearfix">
+                        <div class="avatar">
+                            <img class="img-responsive imgprofile " alt="Profile pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></br><!-- profile image end -->
+    <!-- profile info -->
+    <div class="container" id="profileinfo">
+        <div class="row">
+            <div class="col-sx-12 col-sm-12 col-md-8">
+                    <h2>About Me</h2><br />
+                    <p>Fullname : <span id="fullname"></span></p>
+                    <p>Facebook Profile ID : <span id="profileid"></span></p>
+                    <p>Gender : <span id="gender"></span></p>
+                    <p>Birthday : <span id="birthday"></span></p>
+                    <p>Home Town : <span id="hometown"></span></p>
+                    <p>My Quotes: <span id="quotes"></span></p>
+            </div>
+        </div>
+    </div></br><!-- profile image end -->
+    <!-- profile page end -->
+<!-- feeds -->
+<div class="container" id ="feedinfo">
+    <section class="container">
+        <div class="row">
+            <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6" align="center">
+                <div class="feed1">
+                    <a id="post1"></a>
+                    <a class="photopost1"></a>
+                </div>           
+            </div>
+            <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6" align="center">
+                <div class="feed2">
+                    <a id="post2"></a>
+                    <a class="photopost2"></a>
+                </div>           
+            </div>
+        </div>
+    </section></br>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6" align="center">
+                <div class="feed3">
+                    <a id="post3"></a>
+                    <a class="photopost3"></a>
+                </div>           
+            </div>
+            <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6" align="center">
+                <div class="feed4">
+                    <a id="post4"></a>
+                    <a class="photopost4"></a>
+                </div>           
+            </div>
+        </div>
+    </section></br>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6" align="center">
+                <div class="feed5">
+                    <a id="post5"></a>
+                    <a class="photopost5"></a>
+                </div>           
+            </div>
+            <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6" align="center">
+                <div class="feed6">
+                    <a id="post6"></a>
+                    <a class="photopost6"></a>
+                </div>           
+            </div>
+        </div>
+    </section></br>
+</div><!-- feeds end -->
+<!-- back btn -->
+<div class="container">
+    <div class="row">
+        <div class="col-sx-12 col-sm-12 col-md-8 col-lg-8">
+            <div id="gobackbtn" class="row" style="text-align:center;">
+                <button class="btn-primary btn"><h5>Go Back to Home Page</h5></button>
+            </div>
+        </div>
+    </div>
+</div><!-- back btn end -->
+
+<!-- Bootstrap core JavaScripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="javascript/app.js"></script>
+
+</body>
+</html>
