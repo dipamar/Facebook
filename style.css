@@ -1,0 +1,55 @@
+body{
+background-image: url("../css/backimage.jpg");
+background-repeat: repeat;
+}
+
+.profile {
+  width: 100%;
+  position: relative;
+  background: #FFF;
+  border: 1px solid #D5D5D5;
+  margin-bottom: 20px;
+}
+
+.profile .image {
+  display: block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+ // border: 5px solid #FFF;
+}
+
+.profile .user {
+  position: relative;
+//  padding: 0px 5px 5px;
+}
+
+.profile .user .avatar {
+  position: absolute;
+  left: 20px;
+  top: -85px;
+  z-index: 2;
+}
+
+.profile .user{
+  margin-bottom: 0px;
+}
+
+.profile {
+  float: left;
+  margin-left: 20px;
+}
+
+.img-profile{
+    height:100px;
+    width:100px;
+}
+
+.img-cover{
+    width:1000px;
+    height:330px;
+}
+
+
+                    
